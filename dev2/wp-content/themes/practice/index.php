@@ -31,7 +31,7 @@
             <a href="" class="header__nav-link"><img src="<?php echo get_template_directory_uri() ?>/img/icon-02.png" alt=""><span>当院について</span></a>
           </li>
           <li class="header__nav-item">
-            <a href="" class="header__nav-link"><img src="<?php echo get_template_directory_uri() ?>/img/icon-03.png" alt=""><span>診療案内</span></a>
+            <a href="" class="header__nav-link"><img src="<?php echo get_template_directory_uri() ?>/img/icon-03.png" alt=""><span>だちだよーりなちゃん見てる～？</span></a>
           </li>
           <li class="header__nav-item">
             <a href="" class="header__nav-link"><img src="<?php echo get_template_directory_uri() ?>/img/icon-04.png" alt=""><span>スタッフ紹介</span></a>
@@ -367,9 +367,7 @@
         </div>
         <div class="footer__right">
           <div class="footer__right-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.738983332029!2d139.63115384660057!3d35.70482907036609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f277bd8e8ba3%3A0x35285e771d30e2b0!2z5rKz5YyX57eP5ZCI55eF6Zmi!5e0!3m2!1sja!2sjp!4v1647161636470!5m2!1sja!2sjp"
-              width="385" height="385" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.738983332029!2d139.63115384660057!3d35.70482907036609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f277bd8e8ba3%3A0x35285e771d30e2b0!2z5rKz5YyX57eP5ZCI55eF6Zmi!5e0!3m2!1sja!2sjp!4v1647161636470!5m2!1sja!2sjp" width="385" height="385" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -466,7 +464,7 @@
   </a>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
 </body>
 
 </html>
