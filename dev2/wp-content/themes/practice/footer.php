@@ -93,7 +93,7 @@
                 <a href="" class="c-btn-arrowBlue">口腔外科</a>
               </li>
               <li class="p-footer-subNav__item">
-                <a href="" class="c-btn-arrowBlue">レーザー治療</a>
+                <a href="" class="c-btn-arrowBlue">やっほー</a>
               </li>
             </ul>
           </div>
