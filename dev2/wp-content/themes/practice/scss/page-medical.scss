@@ -1,0 +1,577 @@
+$color-text: #393939;
+$color-text2: #ffffff;
+
+$color-main: #1391e6;
+$color-sub: #0060a0;
+$color-sub2: #dff1fd;
+$color-accent: #ee5a6d;
+
+
+body {
+  font-size: 14px;
+  color: $color-text;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 28px;
+  }
+}
+
+// header
+
+header {
+  height: 80px;
+  box-shadow: 0px 3px 6px rgba(#000, 0.16);
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  text-align: center;
+  display: flex;
+  height: inherit;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.header__left {}
+
+.header__logo {
+  display: block;
+  max-width: 270px;
+  width: 100%;
+  margin: 25px 0;
+
+  img {
+    display: block;
+  }
+}
+
+.header__logo {}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin-left: auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+
+.header__nav-item {
+  display: flex;
+
+  &:nth-child(n+2) {
+    margin-left: 24px;
+  }
+}
+
+.header__nav-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+
+  span {
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+}
+
+.header__tel {
+  margin-left: 32px;
+  text-align: right;
+}
+
+.header__tel-text {
+  font-size: 12px;
+}
+
+.header__tel-number {
+  color: $color-main;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 6px;
+  white-space: nowrap;
+
+  img {
+    margin-right: -5px;
+    vertical-align: bottom;
+  }
+}
+
+// tep
+
+.page_top {
+  margin-top: 120px;
+}
+
+.page_top_inner {
+  position: relative;
+  z-index: 0;
+  margin: 0 60px;
+  background-image: url(../img/page-medical_top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 371px;
+  border-radius: 12px;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px;
+
+  }
+}
+
+.page_top_group {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  top: 51%;
+  transform: translateY(-50%);
+}
+
+.page_top_title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.page_top_text {
+  font-weight: 700;
+}
+
+
+
+.medical__nav {
+  margin-top: 80px;
+}
+
+.medical__inner {
+  height: 366px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px 0 20px;
+  width: 1040px;
+}
+
+.medical__wrap {
+ &:nth-child(n + 2) {
+   margin-top: 60px;
+ }
+}
+
+.medical__title-wrap {
+  display: flex;
+}
+
+.medical__title {
+  font-size: 28px;
+  font-weight: 700;
+
+}
+
+.medical__subtitle {
+  display: block;
+  color: #fff;
+  border-radius: 24px;
+  margin-left: 24px;
+  padding: 8px 12px;
+}
+
+.medical__subtitle-blew {
+  background-color: $color-main;
+}
+
+.medical__subtitle-red {
+  background-color: $color-accent;
+}
+
+.medical__items {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.medical_item {
+margin-right: 16px;
+border: 2px solid $color-main;
+border-radius: 12px;
+
+
+a {
+  display: block;
+  color: $color-main;
+  padding: 19px 32px;
+  font-size: 24px;
+  font-weight: 700;
+  
+}
+}
+
+
+
+// footer
+
+
+
+.footer__top-img {
+  margin-top: 160px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(../img/wave.png);
+    background-size: cover;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: -32px;
+  }
+}
+
+footer {
+  background-color: $color-sub2;
+  padding-top: 58px;
+  position: relative;
+  height: 839px;
+}
+
+.footer__inner {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1040px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px 49px;
+}
+
+.footer__left {
+  max-width: 478px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__left-img {
+  width: 403px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer__left-access {
+  margin-top: 6px;
+
+  span {
+    margin-left: 14px;
+  }
+}
+
+.footer__left-tel {
+  color: $color-main;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 24px;
+  letter-spacing: -0.02em;
+}
+
+.footer__left-time {
+  color: $color-main;
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.footer__left-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 16px;
+  height: 56px;
+  justify-content: center;
+  max-width: 220px;
+  width: 100%;
+}
+
+.footer__bluebtn {
+  background-color: $color-main;
+  color: #fff;
+}
+
+.footer__whitebtn {
+  background-color: #fff;
+  border: 1px solid #1391E6;
+  color: $color-main;
+}
+
+.footer__right {
+  margin-left: 40px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.footer__nav-item {
+  font-weight: 700;
+
+  &:nth-child(n + 2) {
+    margin-left: 40px;
+  }
+}
+
+.footer__nav-item-top {
+  font-weight: 700;
+}
+
+.footer__nav-itembox {
+  display: flex;
+}
+
+.footer__nav-subitem {
+  &:nth-child(n + 2) {
+    margin-left: 24px;
+  }
+}
+
+.p-footer-subNav__item {
+  margin-top: 16px;
+  position: relative;
+  display: block;
+  padding-left: 10px;
+
+  ::before {
+    content: "";
+    background-image: url(../img/icon-arrow-blue-1.png);
+    background-size: contain;
+    height: 12px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.footer__copyright {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: $color-main;
+  height: 55px;
+  margin-top: 62px;
+}
+
+.footer__copyright-text {
+  color: #fff;
+}
+
+.reserve {
+  display: flex;
+  align-items: center;
+  background-color: $color-main;
+  border-radius: 20px 0 0 20px;
+  height: 120px;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 176px;
+  width: 92px;
+  z-index: 30;
+
+  img {
+    margin-top: 20px;
+    width: 55%;
+  }
+}
+
+.reserve-text {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.top-btn {
+  bottom: 40px;
+  height: 52px;
+  width: 52px;
+  position: fixed;
+  right: 20px;
+  z-index: 30;
+}
+
+////////////// medical ////////////////
+
+.medical2 {
+
+}
+
+.medical2_top {
+  height: 201px;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background-image: url(../img/bg-top-1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 201px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+.medical2_bg {
+  background-color: $color-sub2;
+}
+
+.medical2_inner {
+  height: 366px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px 0 20px;
+  width: 1040px;
+}
+
+.section__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 28px;
+  }
+}
+
+
+.section_title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.medical2_items {
+
+}
+
+.medical2_item {
+
+}
+
+.medical2_title-wrap {
+
+}
+
+.medical2_title {
+
+}
+
+.medical2_subtitle {
+
+}
+
+.medical2_content {
+
+}
+
+.medical2_textwrap {
+
+}
+
+.medical2_text {
+
+}
+
+.medical2_imgwrap {
+
+}
+
+.medical2_img {
+
+}
